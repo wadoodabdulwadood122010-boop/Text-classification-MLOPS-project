@@ -1,12 +1,14 @@
 # data ingestion
 import numpy as np
 import pandas as pd
-
+import sys
 
 import os
 from sklearn.model_selection import train_test_split
 import yaml
 import logging
+import sys
+sys.path.append(os.getcwd())
 from src.logger import logging
 from src.connections import s3_connection
 

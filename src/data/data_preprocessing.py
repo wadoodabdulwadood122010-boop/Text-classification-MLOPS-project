@@ -1,8 +1,9 @@
 # data preprocessing
-
+import sys
+import os
+sys.path.append(os.getcwd())
 import numpy as np
 import pandas as pd
-import os
 import re
 import nltk
 import string

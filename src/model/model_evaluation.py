@@ -8,6 +8,8 @@ import mlflow
 import mlflow.sklearn
 import dagshub
 import os
+import sys
+sys.path.append(os.getcwd())
 from src.logger import logging
 
 

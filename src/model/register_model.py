@@ -3,11 +3,15 @@
 import json
 import mlflow
 import logging
-from src.logger import logging
+import sys
 import os
+sys.path.append(os.getcwd())
+from src.logger import logging
+
 import dagshub
 
 import warnings
+
 warnings.simplefilter("ignore", UserWarning)
 warnings.filterwarnings("ignore")
 

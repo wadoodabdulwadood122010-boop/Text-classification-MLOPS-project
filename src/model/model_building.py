@@ -1,8 +1,11 @@
 import numpy as np
 import pandas as pd
+import os
 import pickle
 from sklearn.linear_model import LogisticRegression
 import yaml
+import sys
+sys.path.append(os.getcwd())
 from src.logger import logging
 
 
