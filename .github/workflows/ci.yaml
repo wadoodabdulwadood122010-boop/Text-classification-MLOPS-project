@@ -29,8 +29,8 @@ jobs:
 
       - name: Run DVC Repro
         env: 
-          DAGSHUB_KEY: ${{ secrets.CAPSTONE_TEST }}
+          DAGSHUB_KEY: ${{ secrets.DAGSHUB_KEY }}
           MLFLOW_TRACKING_URI: https://dagshub.com/wadoodabdulwadood122010/Text-classification-MLOPS-project.mlflow
           MLFLOW_TRACKING_USERNAME: wadoodabdulwadood122010
-          MLFLOW_TRACKING_PASSWORD: ${{ secrets.CAPSTONE_TEST }}
+          MLFLOW_TRACKING_PASSWORD: ${{ secrets.DAGSHUB_KEY }}
         run: dvc repro

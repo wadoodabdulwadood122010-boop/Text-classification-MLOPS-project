@@ -16,7 +16,7 @@ from src.logger import logging
 
 dagshub_token = os.getenv("DAGSHUB_KEY")
 if not dagshub_token:
-    raise EnvironmentError("CAPSTONE_TEST environment variable is not set")
+    raise EnvironmentError("DAGSHUB_KEY environment variable is not set")
 
 os.environ["MLFLOW_TRACKING_USERNAME"] = dagshub_token
 os.environ["MLFLOW_TRACKING_PASSWORD"] = dagshub_token
