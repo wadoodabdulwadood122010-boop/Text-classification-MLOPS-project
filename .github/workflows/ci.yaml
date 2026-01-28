@@ -85,7 +85,7 @@ jobs:
       - name: Update kubeconfig
         run: |
           aws eks update-kubeconfig --region ${{ secrets.AWS_REGION }} --name flask-app-cluster
-
+ 
       - name: Create ECR Registry Secret in K8s
         run: |
           kubectl delete secret regcred --ignore-not-found
